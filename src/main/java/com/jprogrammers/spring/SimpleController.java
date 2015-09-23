@@ -23,4 +23,14 @@ public class SimpleController {
         return "test";
     }
 
+    /**
+     * usage of @ModelAttribute at method argument, because of addModelMethod() the message argument will have "Hey" value
+     * */
+    @RequestMapping(value = "/another" , method = RequestMethod.GET)
+    public String handleRequest(@ModelAttribute String message){
+
+        System.out.println(message); // will print Hey
+
+        return "test";
+    }
 }
