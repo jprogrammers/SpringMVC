@@ -47,9 +47,9 @@
                 <version>9.2.11.v20150529</version>
                 <configuration>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
-                    <stopPort>8082</stopPort>
+                    <stopPort>8080</stopPort>
                     <webApp>
-                        <contextPath>/spring2</contextPath>
+                        <contextPath>/</contextPath>
                     </webApp>
                 </configuration>
             </plugin>
